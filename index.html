@@ -4,13 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YassTech | Smart Solutions. Simple Impact.</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
     /* ---------- COLORS ---------- */
     :root {
       --bright-cyan: #00E5FF;
       --sky-blue: #00B2FF;
       --deep-blue: #0052CC;
+      --dark: #0a0a14;
       --white: #FFFFFF;
+      --gray: #555;
       --gradient: linear-gradient(180deg, var(--bright-cyan), var(--sky-blue), var(--deep-blue));
     }
 
@@ -19,13 +25,13 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
       scroll-behavior: smooth;
     }
 
     body {
       background-color: var(--white);
-      color: #222;
+      color: var(--dark);
+      font-family: "Inter", sans-serif;
       overflow-x: hidden;
     }
 
@@ -53,14 +59,16 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      font-family: "Orbitron", sans-serif;
       font-weight: 700;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       color: var(--deep-blue);
+      letter-spacing: 1px;
     }
 
     .logo img {
-      width: 60px;
-      height: 60px;
+      width: 55px;
+      height: 55px;
     }
 
     .nav-links {
@@ -70,7 +78,8 @@
 
     .nav-links a {
       font-weight: 500;
-      color: #333;
+      color: #222;
+      font-size: 0.95rem;
       transition: color 0.3s;
     }
 
@@ -83,19 +92,22 @@
       background: var(--gradient);
       color: var(--white);
       text-align: center;
-      padding: 160px 20px 120px;
+      padding: 180px 20px 140px;
       animation: fadeIn 1.5s ease;
     }
 
     header h1 {
+      font-family: "Orbitron", sans-serif;
       font-size: 3.2rem;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
     }
 
     header p {
-      font-size: 1.3rem;
-      opacity: 0.9;
+      font-size: 1.25rem;
+      font-weight: 400;
+      opacity: 0.95;
       margin-bottom: 25px;
     }
 
@@ -112,26 +124,29 @@
 
     .cta:hover {
       transform: translateY(-3px);
-      box-shadow: 0 4px 12px rgba(0, 178, 255, 0.4);
+      box-shadow: 0 4px 12px rgba(0, 178, 255, 0.5);
     }
 
-    /* ---------- ABOUT ---------- */
+    /* ---------- SECTIONS ---------- */
     section {
       padding: 100px 20px;
       text-align: center;
     }
 
     section h2 {
+      font-family: "Orbitron", sans-serif;
       font-size: 2rem;
       color: var(--deep-blue);
       margin-bottom: 20px;
+      letter-spacing: 1px;
     }
 
     section p {
-      max-width: 700px;
+      max-width: 750px;
       margin: 0 auto;
       font-size: 1.1rem;
-      color: #444;
+      color: var(--gray);
+      line-height: 1.7;
     }
 
     /* ---------- SERVICES ---------- */
@@ -158,8 +173,14 @@
     }
 
     .card h3 {
-      margin-bottom: 10px;
-      font-size: 1.4rem;
+      font-family: "Orbitron", sans-serif;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+
+    .card p {
+      color: #f0f0f0;
+      font-size: 1rem;
     }
 
     /* ---------- FOOTER ---------- */
@@ -167,7 +188,7 @@
       background-color: var(--deep-blue);
       color: var(--white);
       text-align: center;
-      padding: 30px 10px;
+      padding: 35px 10px;
       font-size: 0.9rem;
     }
 
@@ -215,7 +236,7 @@
   <!-- ABOUT -->
   <section id="about">
     <h2>About Us</h2>
-    <p>At YassTech, we blend innovation and intelligence to deliver impactful technology. We specialize in web development, mobile applications, AI solutions, and digital design — all crafted with precision and simplicity in mind.</p>
+    <p>At YassTech, we merge creativity, intelligence, and technology to craft impactful solutions. We specialize in web development, mobile apps, AI innovation, and branding — all designed to empower your digital journey.</p>
   </section>
 
   <!-- SERVICES -->
@@ -224,19 +245,19 @@
     <div class="services">
       <div class="card">
         <h3>Web Development</h3>
-        <p>Modern, responsive, and lightning-fast websites.</p>
+        <p>Modern, responsive, and lightning-fast websites built with precision.</p>
       </div>
       <div class="card">
         <h3>Mobile Apps</h3>
-        <p>Seamless experiences for Android and iOS.</p>
+        <p>Seamless mobile experiences that connect users and technology.</p>
       </div>
       <div class="card">
         <h3>AI Solutions</h3>
-        <p>Custom AI models turning data into real insights.</p>
+        <p>Smart AI systems that transform your ideas into intelligent results.</p>
       </div>
       <div class="card">
         <h3>Branding</h3>
-        <p>Unique digital identities for modern tech brands.</p>
+        <p>Distinctive digital identities that define your presence with clarity.</p>
       </div>
     </div>
   </section>
